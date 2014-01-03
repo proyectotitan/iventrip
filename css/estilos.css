@@ -4,9 +4,28 @@
     Author     : Usuario
     Description:
         Purpose of the stylesheet follows.
+    colores: Naranja #f7aa2f     hover #ff9933
+             Gris    #e0dede
 */
-
-root { 
-    display: block;
+.limpiar{clear: both;}
+.centrado_web{
+    width: 1010px;
+    margin: 0 auto;
 }
-
+.fondo_gris{
+    background: #e0dede; 
+}
+.cabecera_blanca{
+    background: #fff;
+}
+.cabecera_blanca .registrarte{
+    background: #f7aa2f;
+    color: #fff;
+    float: right;
+    transition: background 0.4s;
+    -webkit-transition: background 0.4s;
+}
+.cabecera_blanca .registrarte:hover{
+    background: #ff9933;
+    
+}
