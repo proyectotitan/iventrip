@@ -4,8 +4,22 @@
         <title>Inventrip</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="lib/jquery.js"></script>
+        <script type="text/javascript" src="lib/javascript.js"></script>
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
+         <script type="text/javascript">
+        <!--   
+        $(document).ready(function() {
+                $('#cambio').click(function(){
+                $('body').css('background-image', 'url(images/fondo_amigos.png)');
+                });                       
+            });    
+            -->
+        function habilitar(){
+         document.getElementById('fondo_amigos').style.visibility='visible';
+
+        }
+</script> 
     </head>
     <body class="fondo_gris">
         <header class="cabecera_blanca">
@@ -14,6 +28,8 @@
             <div class="limpiar"></div>
         </header>
         <section>
+            <img src="images/fondo_amigos.png" id="fondo_amigos">
+
             <div class="introduccion_portada">
                 <span>Ll&eacute;vate Ribera del Duero al m&oacute;vil</span><br/>
                 <span>Con inventrip, es muy f&aacute;cil, en tres sencillos<br/> pasos tendr&aacute;s tu viaje en el m&oacute;vil</span>
@@ -22,13 +38,15 @@
                 <div class="mano_movil">
                     <img src="images/mano_movil.png">
                 </div>
+                
                 <div class="botones_movil">
-                    <img src="images/icono_restaurante.png">
-                    <img src="images/icono_bodega.png">
+                    <div class="botones_movil_restaurante"><a href="#"  onclick="habilitar()"  ><img src="images/icono_restaurante.png"></a></div>
+                    <div class="botones_movil_bodega"><img src="images/icono_bodega.png"></div>
                 </div>
                 <div class="flecha_abajo">
                     <img src="images/flecha_abajo.png">
                 </div>
+
             </div>
         </section>
     </body>
