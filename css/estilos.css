@@ -58,7 +58,7 @@
     text-align: center;
     position: absolute;
     width: 100%;
-    bottom: 0px;
+    top: 190px;
     z-index: 100;
 }
 .mano_movil img{
@@ -68,9 +68,10 @@
 }
 .botones_movil{
     text-align: center;
-    position: relative;
-    bottom: 0px;
+    position: absolute;
+    top: 476px;
     z-index: 101;
+    width: 100%;
 }
 .botones_movil img{
     cursor: pointer;
@@ -86,19 +87,19 @@
     margin-bottom: -6px;
 }
 .botones_movil_bodega{
-    margin-top: 3.5%;
     margin-left: 9%;
     
+    margin-top: 50px;
 }
 .botones_movil_restaurante{
-    margin-top: 13.5%;
+    top: 41.5%;
     margin-left: -4%;
 }
 .flecha_abajo{
     text-align: center;
     position: absolute;
     width: 100%;
-    bottom: 0px;
+    top: 856px;
     z-index: 101;
 }
 .flecha_abajo img{
@@ -120,17 +121,15 @@
 }
 #fondo_amigos{
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 100%;
     top: 48px;
-    min-height: 754px;
 }
 #fondo_bodega{
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 100%;
     top: 48px;
-    min-height: 754px;
 }
