@@ -136,18 +136,16 @@
     width: 100%;
     top: 48px;
 }
-
 .cabecera_paso_uno {
-position: relative;
-bottom: 0px;
-width: 100%;
-height: 50px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
 }
-
 .cabecera_paso_uno img{
-float: left;
-margin-top: 0.3%;
-margin-left: 1%;
+    float: left;
+    margin-top: 0.3%;
+    margin-left: 1%;
 }
 .pantalla{
     margin-top: 7%;
@@ -184,11 +182,36 @@ margin-left: 1%;
 }
 .agenda{
     position: relative;  
-    margin-left: 70%;  
-    
+    text-align: center;
 }
 .agenda img{
     width: 34%;
-    
     margin-top: 8%;
+}
+@media screen and (max-width: 1020px){
+    .pantalla{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-left: 0%;
+    }
+    .pantalla img{
+        max-width: 867px;
+    }
+    .texto_paso_uno{
+        float: none;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0%;
+    }
+    .agenda{
+        width: 100%;
+        text-align: center;
+        margin-left: 0%;
+    }
+    .agenda img{
+        max-width: 181px;
+        margin-top: 20px;
+    }
 }
