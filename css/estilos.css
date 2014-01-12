@@ -124,14 +124,14 @@
 }
 #fondo_amigos{
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     width: 100%;
     top: 48px;
 }
 #fondo_bodega{
     display: none;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     width: 100%;
     top: 48px;
@@ -330,3 +330,22 @@
     }
 }
 /*-----------------------portada------------------------------------------------*/
+@media screen and (max-height: 650px){
+    #fondo_amigos {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        top: 0px;
+    }
+    #fondo_bodega {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        top: 0px;
+    }
+    #movil {
+        margin-bottom: -3%;
+        width: 100%;
+        max-width: 835px;
+    }
+}
