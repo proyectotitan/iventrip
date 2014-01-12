@@ -24,7 +24,7 @@
     color: #fff;
     font-weight: bold;
     float: right;
-    padding: 14px;
+    padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
     margin-right: 0px;
@@ -60,9 +60,6 @@
     text-align: center;
     position: relative;
     width: 100%;
-
-    bottom: 0px;
-
     top: 19%;
     z-index: 100;
     margin-top: 0.11%;
@@ -70,14 +67,11 @@
 .mano_movil img{
     margin-bottom: -3%;
     width: 100%;
-    max-width: 815px;
     max-width: 43.2%;
 }
 .botones_movil{
     text-align: center;
     position: relative;
-    bottom: 0px;
-    z-index: 101;
     z-index: 101;
     width: 100%;
     margin-top: -26%;
@@ -96,20 +90,18 @@
     margin-bottom: -53px;
 }
 .botones_movil_bodega{
-    margin-top: 3.5%;
     margin-left: 9%;
     
     margin-top: 2%;
 }
 .botones_movil_restaurante{
-    margin-top: 13.5%;
+    top: 41.5%;
     margin-left: -4%;
 }
 .flecha_abajo{
     text-align: center;
     position: relative;
     width: 100%;
-    bottom: 0px;
     margin-top: 18.8%;
     z-index: 101;
 }
@@ -132,14 +124,14 @@
 }
 #fondo_amigos{
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 100%;
     top: 48px;
 }
 #fondo_bodega{
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 100%;
     top: 48px;
