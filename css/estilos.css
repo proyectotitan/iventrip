@@ -141,6 +141,7 @@
     bottom: 0px;
     width: 100%;
     height: 50px;
+    background: #fff;
 }
 .cabecera_paso_uno img{
     float: left;
@@ -265,5 +266,66 @@
     }
     .contenedor_paso2{
         position: relative;
+    }
+}
+/*---------------------------- estilos paso 3 ----------------------------------*/
+.fondo3{
+    background-image: url('../images/fondo3.jpg');
+}
+.cabecera_paso_tres {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 125px;
+    background: #fff;
+}
+.cabecera_paso_tres img{
+    float: left;
+    margin-top: 0.3%;
+    margin-left: 1%;
+}
+.contenedor_paso3{
+    text-align: center;
+    background-image: url('../images/fondo_paso3.jpg');
+    background-repeat: repeat-x;
+}
+.contenedor_paso3 img{
+    width: 100%;
+    max-width: 840px;
+    position: relative;
+    margin-top: -77px;
+}
+.texto_paso3{
+    float: left;
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    width: 45%;
+    margin-top: -184px;
+    position: relative;
+    z-index: 101;
+}
+.texto_paso3 span:first-child{
+    font-size: 4.6em;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.texto_paso3 span:last-of-type{
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;  font-weight: 100;
+}
+.texto_paso3 span:last-child{
+    color: #254c5d;
+    font-size: 1.2em;
+    font-family: Arial;
+}
+@media screen and (max-width: 775px){
+    .texto_paso3{
+        width: 90%;
+        margin-top: 0px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
