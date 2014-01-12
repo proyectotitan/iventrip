@@ -6,7 +6,11 @@
         <script src="lib/jquery.js"></script>
         <script type="text/javascript" src="lib/funciones.js"></script>
         <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/estilos.css">        
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">   
+        <script>
+            window.onload = colocacion_portada;
+            $(window).resize(function(){colocacion_portada();});
+        </script>
     </head>
     <body class="fondo_gris">
         <header class="cabecera_blanca">
@@ -21,20 +25,13 @@
                 <span>Ll&eacute;vate Ribera del Duero al m&oacute;vil</span><br/>
                 <span>Con inventrip, es muy f&aacute;cil, en tres sencillos<br/> pasos tendr&aacute;s tu viaje en el m&oacute;vil</span>
             </div>
-            <div class="contenedor_mano_movil">
-                <div class="mano_movil">
-                    <img src="images/mano_movil.png" alt="mano_movil">
-                    <div class="botones_movil">
-                        <div class="botones_movil_restaurante">
-                            <img src="images/icono_restaurante.png" onclick="restaurante();" alt="icono">
-                        </div>
-                        <div class="botones_movil_bodega">
-                            <img src="images/icono_bodega.png" onclick="bodega();" alt="icono">
-                        </div>
-                    </div>
+            <div class="mano_movil_contenedor">
+                <div class="movil">
+                    <img src="images/mano_movil.png" alt="mano_movil" id="movil"> 
+                    <img src="images/icono_restaurante.png" onclick="restaurante();" alt="icono" class="restuarante">
                 </div>
-                <div class="flecha_abajo">
-                    <img src="images/flecha_abajo.png" alt="flecha"> 
+                <div class="flecha">
+                    <img src="images/flecha_abajo.png" alt="flecha" > 
                 </div>
             </div>
         </section>
