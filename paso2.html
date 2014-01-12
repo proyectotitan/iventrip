@@ -8,29 +8,30 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/estilos.css">  
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+        <script>
+            window.onload = colocacion_paso2;
+            $(window).resize(function(){colocacion_paso2();});
+        </script>
     </head>
     <body>
         <header class="cabecera_paso_uno">
-            <img src="images/logo.png">
+            <img src="images/logo.png" alt="logo">
         </header>
-        <section>
-            <div class="pantalla">
-                <img src="images/pantalla.png">
-            </div>
-            <div class="texto_paso_uno">
-                <span>Paso 1</span><br/>
-                <span>Organiza tu agenda de viaje</span>
+        <section class="arreglo_posicion">
+            <div class="texto_paso2">
+                <span>Paso 2</span><br/>
+                <span>Navega y selecciona qu&eacute; vas a ver</span>
                 <p>
                     <span>
                         Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Maecenas non massa laoreet erat
-                        sodales vestibulum. Vivamus erat lacus, interdum non pellentesque sit amet, tempor vel<br/>
-                        metus. 
+                        sodales vestibulum
                     </span>
                 </p>
-                <div class="agenda">
-                    <img src="images/agenda.png">                    
-                </div>
+            </div>
+            <div class="limpiar"></div>
+            <div class="contenedor_paso2">
+                <img src="images/paso2.jpg" alt="paso2" id="im_paso2">
             </div>
         </section>
     </body>

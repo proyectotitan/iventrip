@@ -216,3 +216,54 @@
         margin-top: 20px;
     }
 }
+/*---------------------------- estilos paso 2 ----------------------------------*/
+.arreglo_posicion{
+    position: relative;
+}
+.contenedor_paso2{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.contenedor_paso2 img{
+    width: 100%;
+    margin-bottom: -4px;
+    display: none;
+}
+.texto_paso2{
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    float: right;
+    padding: 2%;
+    padding-right: 5%;
+    width: 45%;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+}
+.texto_paso2 span:first-child{
+    font-size: 4.6em;
+    color: #f8a01f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.texto_paso2 span:last-of-type{
+    color: #838383;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;  font-weight: 100;
+}
+.texto_paso2 span:last-child{
+    color: #b7b7b6;
+    font-size: 1.2em;
+    font-family: Arial;
+}
+@media screen and (max-width: 630px){
+    .texto_paso2{
+        width: 96%;
+        float: none;
+        padding: 2%;
+    }
+    .contenedor_paso2{
+        position: relative;
+    }
+}
