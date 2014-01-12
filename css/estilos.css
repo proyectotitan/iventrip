@@ -16,6 +16,8 @@
 .cabecera_blanca{
     background: #fff;
     position: relative;
+    bottom: 0px;
+    width: 100%;
 }
 .cabecera_blanca .registrarte{
     background: #f7aa2f;
@@ -25,6 +27,7 @@
     padding: 14px;
     padding-left: 25px;
     padding-right: 25px;
+    margin-right: 0px;
     transition: background 0.4s;
     -webkit-transition: background 0.4s;
 }
@@ -33,9 +36,9 @@
 }
 .cabecera_blanca img{
     float: left;
-    margin-top: 5px;
-    margin-bottom: -1px;
-    margin-left: 25px;
+    margin-top: 0.3%;
+    margin-bottom: 0%;
+    margin-left: 1%;
 }
 .introduccion_portada{
     text-align: center;
@@ -55,39 +58,48 @@
 }
 .mano_movil{
     text-align: center;
-    position: absolute;
+    position: relative;
     width: 100%;
+
     bottom: 0px;
+
+    top: 19%;
     z-index: 100;
+    margin-top: 0.11%;
 }
 .mano_movil img{
-    margin-bottom: -4px;
+    margin-bottom: -3%;
     width: 100%;
     max-width: 815px;
+    max-width: 43.2%;
 }
 .botones_movil{
     text-align: center;
     position: relative;
     bottom: 0px;
     z-index: 101;
+    z-index: 101;
+    width: 100%;
+    margin-top: -26%;
 }
 .botones_movil img{
     cursor: pointer;
-    width: 30px;
+    width: 2%;
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
 }
 .botones_movil img:hover{
-    width: 35px;
+    width: 3%;
 }
 .botones_movil img:first-child:hover{
-    width: 35px;
-    margin-bottom: -6px;
+    width: -2%;
+    margin-bottom: -53px;
 }
 .botones_movil_bodega{
     margin-top: 3.5%;
     margin-left: 9%;
     
+    margin-top: 2%;
 }
 .botones_movil_restaurante{
     margin-top: 13.5%;
@@ -95,9 +107,10 @@
 }
 .flecha_abajo{
     text-align: center;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0px;
+    margin-top: 18.8%;
     z-index: 101;
 }
 .flecha_abajo img{
@@ -114,7 +127,7 @@
 @media screen and (max-height: 695px){
     .contenedor_mano_movil{
         position: relative;
-        min-height: 515px;
+        min-height: 334px;
     }
 }
 #fondo_amigos{
@@ -130,4 +143,197 @@
     z-index: 1;
     width: 100%;
     top: 48px;
+}
+.cabecera_paso_uno {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+}
+.cabecera_paso_uno img{
+    float: left;
+    margin-top: 0.3%;
+    margin-left: 1%;
+}
+.pantalla{
+    margin-top: 7%;
+    width: 56%;
+    float: left;
+    margin-left: 1%;
+}
+.pantalla img{
+    width: 100%;
+
+}
+.texto_paso_uno{
+    margin-right: 9%;
+    float: right;
+    margin-top: 8%;
+    position: relative;
+    width: 30%;
+}
+.texto_paso_uno span:first-child{
+    font-size: 4.6em;
+    color: #f8a01f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.texto_paso_uno span:last-of-type{
+    color: #838383;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;  font-weight: 100;
+}
+.texto_paso_uno span:last-child{
+    color: #b7b7b6;
+    font-size: 1.2em;
+    font-family: Arial;
+}
+.agenda{
+    position: relative;  
+    text-align: center;
+}
+.agenda img{
+    width: 34%;
+    margin-top: 8%;
+}
+@media screen and (max-width: 1020px){
+    .pantalla{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-left: 0%;
+    }
+    .pantalla img{
+        max-width: 867px;
+    }
+    .texto_paso_uno{
+        float: none;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0%;
+    }
+    .agenda{
+        width: 100%;
+        text-align: center;
+        margin-left: 0%;
+        margin-bottom: 25px;
+    }
+    .agenda img{
+        max-width: 181px;
+        margin-top: 20px;
+    }
+}
+/*---------------------------- estilos paso 2 ----------------------------------*/
+.arreglo_posicion{
+    position: relative;
+}
+.contenedor_paso2{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.contenedor_paso2 img{
+    width: 100%;
+    margin-bottom: -4px;
+    display: none;
+}
+.texto_paso2{
+    position: relative;
+    z-index: 100;
+    background: #fff;
+    float: right;
+    padding: 2%;
+    padding-right: 5%;
+    width: 45%;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+}
+.texto_paso2 span:first-child{
+    font-size: 4.6em;
+    color: #f8a01f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.texto_paso2 span:last-of-type{
+    color: #838383;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;  font-weight: 100;
+}
+.texto_paso2 span:last-child{
+    color: #b7b7b6;
+    font-size: 1.2em;
+    font-family: Arial;
+}
+@media screen and (max-width: 630px){
+    .texto_paso2{
+        width: 96%;
+        float: none;
+        padding: 2%;
+    }
+    .contenedor_paso2{
+        position: relative;
+    }
+}
+/*---------------------------- estilos paso 3 ----------------------------------*/
+.fondo3{
+    background-image: url('../images/fondo3.jpg');
+}
+.cabecera_paso_tres {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 125px;
+    background: #fff;
+}
+.cabecera_paso_tres img{
+    float: left;
+    margin-top: 0.3%;
+    margin-left: 1%;
+}
+.contenedor_paso3{
+    text-align: center;
+    background-image: url('../images/fondo_paso3.jpg');
+    background-repeat: repeat-x;
+}
+.contenedor_paso3 img{
+    width: 100%;
+    max-width: 840px;
+    position: relative;
+    margin-top: -77px;
+}
+.texto_paso3{
+    float: left;
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    width: 45%;
+    margin-top: -184px;
+    position: relative;
+    z-index: 101;
+}
+.texto_paso3 span:first-child{
+    font-size: 4.6em;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.texto_paso3 span:last-of-type{
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;  font-weight: 100;
+}
+.texto_paso3 span:last-child{
+    color: #254c5d;
+    font-size: 1.2em;
+    font-family: Arial;
+}
+@media screen and (max-width: 775px){
+    .texto_paso3{
+        width: 90%;
+        margin-top: 0px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
